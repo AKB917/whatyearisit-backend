@@ -9,9 +9,9 @@ router.get('/', (req, res)=> {
   res.json({year : date.toString()})
 })
 
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
+// router.get('/', function(req, res, next) {
+//   res.send('respond with a resource');
+// });
 
 
 module.exports = router;
