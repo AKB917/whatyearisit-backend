@@ -4,7 +4,7 @@ var router = express.Router();
 
 /* GET users listing. */
 
-router.get('/year', (req, res)=> {
+router.get('/', (req, res)=> {
   const date = new Date().getFullYear();
   res.json({year : date.toString()})
 })
