@@ -5,8 +5,8 @@ const dd =new Date();
 /* GET users listing. */
 
 router.get('/year', (req, res)=> {
-  const Date = "year: "+ (dd.getFullYear());
-  res.json({Date})
+  const date = (dd.getFullYear());
+  res.json({year : date.toString()})
 })
 
 router.get('/', function(req, res, next) {
