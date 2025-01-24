@@ -1,11 +1,11 @@
 var express = require('express');
 var router = express.Router();
-const dd =new Date();
+
 
 /* GET users listing. */
 
 router.get('/year', (req, res)=> {
-  const date = (dd.getFullYear());
+  const date = new Date().getFullYear();
   res.json({year : date.toString()})
 })
 
